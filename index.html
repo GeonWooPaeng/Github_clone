@@ -1,64 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GitHub</title>
+	<meta charset="UTF-8">
+	<title>GitHub</title>
 
-    <meta name="author" content="GWPAENG">
-    <meta name="description" content="GitHub is where over 65 million developers shape the future of software, together​. Contribute to the open source community, manage your Git repositories">
-    <!-- device 넓이, 초기화면 배율(1:확대/축소 x), 확대/축소 사용x, 확대/축소 최대치, 확대/축소 최소치 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
-    <!-- 인터넷 explore 8버전에서 렌더링 되는 것-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    
-    <!-- og: Open Graph, 외부에 특정 사이트를 공유할 때 => 카카오톡으로 웹사이트 보낼 때 보내지는 정보-->
-    <!-- http://ogp.me/ -->
-    <meta property='og:type' content="website">
-    <meta property="og:site_name" content="GitHub">
-    <meta property="og:title" content="Build software better, together">
-    <meta property="og:description" content="Github clone coding">
-    <meta property="og:image" content="img/logo_github.png">
-    <meta property="og:url" content="https://github.com">
-    
-    <!-- twitter card, og와 같이 정보를 외부에 제공하기 위해 사용 -->
-    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:site" content="Github">
-    <meta property="twitter:title" content="build software better, together">
-    <meta property="twitter:description" content="Github clone coding">
-    <meta property="twitter:image" content="img/logo_github.png">
-    <meta property="twitter:url" content="https://github.com">
+	<meta name="author" content="GWPAENG">
+	<meta name="description" content="GitHub is where over 65 million developers shape the future of software, together​. Contribute to the open source community, manage your Git repositories">
+	<!-- device 넓이, 초기화면 배율(1:확대/축소 x), 확대/축소 사용x, 확대/축소 최대치, 확대/축소 최소치 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<!-- 인터넷 explore 8버전에서 렌더링 되는 것-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	
+	<!-- og: Open Graph, 외부에 특정 사이트를 공유할 때 => 카카오톡으로 웹사이트 보낼 때 보내지는 정보-->
+	<!-- http://ogp.me/ -->
+	<meta property='og:type' content="website">
+	<meta property="og:site_name" content="GitHub">
+	<meta property="og:title" content="Build software better, together">
+	<meta property="og:description" content="Github clone coding">
+	<meta property="og:image" content="img/logo_github.png">
+	<meta property="og:url" content="https://github.com">
+	
+	<!-- twitter card, og와 같이 정보를 외부에 제공하기 위해 사용 -->
+	<!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+	<meta property="twitter:card" content="summary">
+	<meta property="twitter:site" content="Github">
+	<meta property="twitter:title" content="build software better, together">
+	<meta property="twitter:description" content="Github clone coding">
+	<meta property="twitter:image" content="img/logo_github.png">
+	<meta property="twitter:url" content="https://github.com">
 
-    <!-- internet explorer browser에서 파비콘 사용/적용 -->
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!-- 파비콘(favorite icon, 사이트를 대표하는 아이콘) 정의, 위쪽에 나오는 img(img github) -->
-    <link rel="icon" href="./favicon.png">
-    <!-- 스마트폰 사용 아이콘 -->
-    <link rel="apple-touch-icon" href="./favicon.png">
+	<!-- internet explorer browser에서 파비콘 사용/적용 -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- 파비콘(favorite icon, 사이트를 대표하는 아이콘) 정의, 위쪽에 나오는 img(img github) -->
+	<link rel="icon" href="./favicon.png">
+	<!-- 스마트폰 사용 아이콘 -->
+	<link rel="apple-touch-icon" href="./favicon.png">
 
-    <!-- google fonts에서 웹 폰트 사용 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    
-    <!-- css 초기화 하기 -->
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
-    <!-- css 연결 -->
-    <link rel="stylesheet" href="css/main.css">
+	<!-- google fonts에서 웹 폰트 사용 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	
+	<!-- css 초기화 하기 -->
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+	<!-- css 연결 -->
+	<link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
-    <div class="body__container">
-        <!-- body 전체 부분 css를 클래스로 사용하기 위함  -->
-        
-        <!-- css 작명규칙(BEM) -->
-        
-        <!--1.  __ : ~의 일부분이다(body__container: body의 일부분인 container이다) -->
-        <!--2.  -- : ~의 상태(btn--danger: danger한 버튼이다) -->
-        <!--3.  - :  일반적인 이름(띄어쓰기인 경우)-->
+	<div class="body__container">
+		<!-- body 전체 부분 css를 클래스로 사용하기 위함  -->
+		
+		<!-- css 작명규칙(BEM) -->
+		
+		<!--1.  __ : ~의 일부분이다(body__container: body의 일부분인 container이다) -->
+		<!--2.  -- : ~의 상태(btn--danger: danger한 버튼이다) -->
+		<!--3.  - :  일반적인 이름(띄어쓰기인 경우)-->
 
-    </div>
-    <div class="btn">hello world</div>
+		<!-- HEADER -->
+		<header class="section">
+			<div class="inner">
+				<div class="menu-group">
+					<div class="logo">
+						<a href="#">GitHub</a>
+					</div>
+					<ul class="main-menu">
+						<li><a href="#">Personal</a></li>
+						<li><a href="#">Open source</a></li>
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Explore</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+	</div>
 </body>
 </html>
