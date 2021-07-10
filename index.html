@@ -161,9 +161,55 @@
 							<p>With hundreds of integrations, GitHub is flexible enough to be at the center of your development process.</p>
 						</li>
 					</ul>
+
+					<!-- MAP : WHERE IS -->
+					<section class="section section--where-is">
+						<div class="inner">
+
+							<div class="summary">
+								<div class="summary__title">
+									Where is GitHub?
+								</div>
+								<div class="summary__description">
+									GitHub is where people build software. More than 18 million people use GitHub to discover, fork, and contribute to over 48 million projects.
+								</div>
+							</div>
+
+							<div id="map"></div>
+
+						</div>
+					</section>
 				</div>
 			</div>
 		</section>
 	</div>
+
+	<script>
+	// map js 만들기 
+	function initMap() {
+		const myLatLng = {
+			// 위도 경도
+			lat: 37.782293,
+			lng: -122.391240
+		}
+		const map = new google.maps.Map(
+			document.getElementById('map'),
+			{
+				// 지도 초기화 옵션
+				center: myLatLng,
+				scrollwheel: false,
+				zoom: 18
+			}
+		);
+		const marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map,
+			title: 'GitHub'
+		});
+	}
+	</script>
+
+	<!-- 외부 js 호출 -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap" async defer></script>
 </body>
 </html>
