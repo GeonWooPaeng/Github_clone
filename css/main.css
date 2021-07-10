@@ -322,3 +322,41 @@ header .sub-menu li a:hover {
 	width: 100%; /*부모요소 최대 width*/
 	height: 100%; /*부모요소 최대 height*/
 }
+.section--feature .tiles {
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+.section--feature .tiles .inner {
+	max-width: 1200px;
+}
+.section--feature .tiles ul {
+	/*tiles 배치 설정*/
+	/* display: grid;
+	grid-template-columns: repeat(4, 1fr) 4개 column을 만들고 1:1:1:1 비율로 만든다 */
+}
+.section--feature .tiles li {
+	padding: 34px 24px;
+	text-align: center; /*글자 가운데 정렬*/
+	line-height: 1.5;
+	border-right: 1px solid #e5e5e5; /*그림 사이사이 선 제작*/
+	box-sizing: border-box;
+	float: left; /*수직 -> 수평*/
+	width: 25%; /*4분할, box-sizing과 같이 사용*/
+}
+.section--feature .tiles li:last-child {
+	border-right: none;
+}
+.section--feature .tiles li img {
+	max-width: 100%; /*부모 width size안에서 조정된다*/
+	padding: 14px 10% 24px; /*위 좌/우 아래*/
+	box-sizing: border-box; /*padding이 퍼지지 않도록 만들어 주는 것*/
+}
+.section--feature .tiles li h3 {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.section--feature .tiles li p {
+	font-size: 14px;
+	color: #767676;
+}
