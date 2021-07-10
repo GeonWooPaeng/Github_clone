@@ -289,3 +289,36 @@ header .sub-menu li a:hover {
 	/* .btn을 inline요소로 바꿔줬기 때문에 수평 정렬하기 위해서 사용*/
 	justify-content: center; 
 }
+
+/* FEATURE */
+.section--feature {
+	background: #f5f5f5;
+	padding-top: 66px;
+}
+.section--feature .summary {
+	max-width: 820px;
+	margin: 0 auto;
+	text-align: center;
+}
+.section--feature .video {
+	max-width: 650px;
+	margin: 50px auto; /*중앙 정렬(위아래 50px, 좌우 중앙)*/
+
+}
+.section--feature .video .video-ratio {
+	height: 0;
+
+	/*동영상이 항상 16 : 9 비율 유지하게 하기 위함
+	(부모width(100%) : x = 16 : 9) %인 경우 부모의 width영향을 받는다*/
+	padding-top: 56.25%;
+
+	position: relative;
+}
+.section--feature .video .video-ratio iframe {
+	/*부모 요소를 기준으로 배치하는 것*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; /*부모요소 최대 width*/
+	height: 100%; /*부모요소 최대 height*/
+}
