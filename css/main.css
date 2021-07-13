@@ -525,6 +525,9 @@ footer .logo:hover svg {
 		/* 메뉴 사라지게 하는 곳 */
 		display: none; /*화면에서 사라진다.*/
 	}
+	header .toggle.on {
+		display: block;
+	}
 	#toggle-btn {
 		background: url("../img/menu-toggle.svg");
 		width: 18px;
