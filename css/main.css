@@ -215,6 +215,9 @@ header .sub-menu li a {
 header .sub-menu li a:hover {
 	color: #4078c0;
 }
+#toggle-btn {
+	text-indent: -9999px;
+}
 
 /* VISUAL */
 .section--visual {
@@ -390,7 +393,7 @@ header .sub-menu li a:hover {
 	display: flex;
 	border: 1px solid #e5e5e5;
 	border-radius: 6px;
-	box-sizing: border-box;
+	box-sizing: border-box; 
 }
 .section--pricing .card .cell {
 	padding: 24px;
@@ -448,4 +451,45 @@ footer .logo {
 footer .logo:hover svg {
 	/* svg 색 바꾸기 */
 	fill: #4078c0;
+}
+
+/* MEDIA */
+/* 미디어 크기를 변경했을 때 css변경되게 하는 것 */
+@media (max-width: 1024px) {
+	/* @media screen and (max-width: 1024px) */
+	/* width 1024 이하일때 */
+	header.section .inner {
+		max-width: none;
+		height: auto; /*내부 자료에 맞게 늘어나게 하기 위함*/
+		padding: 0 20px; /*내부 여백*/
+	}
+	header .menu-group,
+	header .sign-group {
+		/* 다중 선택자 */
+		/* header .menu-group {
+			float: none;
+		}
+		header .sign-group {
+			float: none;
+		} */
+		float: none;
+	}
+
+	/* 메뉴 사라지게 하는 곳 */
+	header .toggle {
+		display: none; /*화면에서 사라진다.*/
+	}
+	header .logo {
+		padding: 12px 0;
+	}
+	#toggle-btn {
+		background: url("../img/menu-toggle.svg");
+		width: 18px;
+		height: 24px;
+		position: absolute; /*부모에 position 값 있는지 확인*/
+		top: 16px;
+		right: 20px;
+		cursor: pointer;
+		text-indent: -9999px;
+	}
 }
