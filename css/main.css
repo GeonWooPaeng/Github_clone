@@ -573,4 +573,39 @@ footer .logo:hover svg {
 	}
 
 	/* FEATURE */
+	.section--feature .summary {
+		padding: 66px 20px 0 20px;
+	}
+	.section--feature .tiles li {
+		width: 50%;
+	}
+	.section--feature .tiles li:nth-child(2) {
+		border-right: none;
+	}
+	.section--feature .tiles li img {
+		padding: 14px 30% 24px; /*img 크기 줄이기*/
+	}
+
+	/* MAP: WHERE IS */
+	.section--where-is .inner {
+		max-width: none;
+		padding: 80px 20px 0 20px;
+	}
+
+	/* PRICING CARD */
+	.section--pricing .inner {
+		max-width: none;
+		padding: 80px 20px;
+	}
+	.section--pricing .card .cell2 {
+		font-size: 20px;
+	}
+
+	/* FOOTER */
+	footer .inner {
+		padding: 50px 20px;
+	}
+	footer .logo {
+		display: none;
+	}
 }
