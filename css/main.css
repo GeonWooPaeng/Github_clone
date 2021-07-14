@@ -216,6 +216,14 @@ header .sub-menu li a:hover {
 	color: #4078c0;
 }
 #toggle-btn {
+	display: none;
+	background: url("../img/menu-toggle.svg");
+	width: 18px;
+	height: 24px;
+	position: absolute; /*부모에 position 값 있는지 확인*/
+	top: 16px;
+	right: 20px;
+	cursor: pointer;
 	text-indent: -9999px;
 }
 
@@ -529,13 +537,19 @@ footer .logo:hover svg {
 		display: block;
 	}
 	#toggle-btn {
-		background: url("../img/menu-toggle.svg");
+		display: block;
+		
+		/* 위의 #toggle-btn에 있다
+		 background: url("../img/menu-toggle.svg");
 		width: 18px;
 		height: 24px;
-		position: absolute; /*부모에 position 값 있는지 확인*/
+		position: absolute; 부모에 position 값 있는지 확인
 		top: 16px;
 		right: 20px;
 		cursor: pointer;
-		text-indent: -9999px;
+		text-indent: -9999px; */
 	}
+
+	
+	/* VISUAL */
 }
