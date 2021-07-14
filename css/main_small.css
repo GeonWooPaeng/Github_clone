@@ -37,6 +37,9 @@ footer .site-links {
     display: block;
     text-align: center;/*글자 가운데 정렬*/
 }
+footer .site-links:first-child {
+    margin-bottom: 20px;
+}
 footer .site-links li {
     display: inline; /*각가 button이 text처럼 수행되고 정렬 된다.*/
 }
